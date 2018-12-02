@@ -1,0 +1,20 @@
+1. POST metoda se koristi za potpunu zamenu resursa, a PUT metodom moze da se vrsi nepotpuna zamena.
+
+2. 415 - Unsupported Media Type
+
+3. API - Application Programming Interface - je softver koji programeru olaksava uskladjivanje vise softverskih komponenti i njihovu komunikaciju.
+
+4. Odgovoreno u Bonus.txt
+
+5. Responzivnost u CSS-u se postize pomocuL
+		- media queries - mozemo odredititi razlicite stilove u zavisnosti od velicine ekrana i drugih promenljivih sa korisnicke strane.
+
+		- grid-view - deli stranicu na kolone koje menjaju sirinu sa velicinom prozora.
+
+6. Najbolji nacini za SEO
+
+		- visestruko pojavljivanje kljucnih reci na stranici
+		- koriscenje alt tagova na svim slikama
+		- robots.txt fajl
+		- optimizacija za mobilne uredjaje
+		- optimizacija vremena ucitavanja strane

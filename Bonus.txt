@@ -1,0 +1,43 @@
+RESTful API za pretragu letova i rezervaciju avio karata
+
+
+
+* GET /letovi/
+	- Vraca JSON niz svih letova u bazi podataka.
+	- Svaki let ima:
+		- string:	"broj_leta"	
+		- string: 	"origin"	//Troslovna oznaka aerodroma sa kog polece let.
+		- string: 	"destination"	//Troslovna oznaka aerodroma na koji slece let.
+		- string: 	"dep_time"	//Vreme poletanja, formatirano kao "YYYY-MM-DD HH:MM:SS"
+		- string: 	"arr_time"	//Vreme sletanja.
+		- int:		"economy"	//Ukupan broj mesta u ekonomskoj klasi.
+		- int:		"business"	//Ukupan broj mesta u biznis klasi.
+		- int: 		"first"		//Ukupan broj mesta u prvoj klasi.
+		- int:		"economy_free"	//Broj slobodnih mesta u ekonomskoj klasi.
+		- int: 		"business_free"	
+		- int:		"first_free"
+		- string:	"status"	//Status leta. Primer: "Poleteo", "Sleteo", "Kasni" itd.
+
+* GET /letovi/<origin>-<destination>
+	- Vraca listu svih letova koji polaze sa aerodroma sa oznakom <origin> i slecu na aerodrom <destination>.
+
+* POST /letovi/<broj_leta>
+	- Rezervise se karta za let sa brojem <broj_leta>.
+	- Klijent salje sledeci JSON:
+		- string:	"fname"		//Ime
+		- string:	"lname"		//Prezime
+		- string:	"class"		//Klasa mesta koje treba rezervisati. Mora biti "economy", "business" ili "first" da bi zahtev bio validan.
+		- string:	"return_flight"	//Broj povratnog leta ako je u pitanju povratna karta. Ovaj parametar nije obavezan.
+	- Server vraca JSON objekat karte koji sadrzi:
+		- string:	"fname"		
+		- string:	"lname"		
+		- string:	"class"		
+		- string:	"return_flight"	
+		- string:	"uuid"		//UUID karte.
+
+* GET /karte/<uuid>
+		- Vraca JSON objekat karte.
+
+* PATCH /karte/<uuid>
+		- Omogucava klijentu da izmeni "fname" ili "lname" karte.
+		- Vraca izmenjen objekat karte.

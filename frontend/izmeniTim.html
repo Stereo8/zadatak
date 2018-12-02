@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/izmeniTim.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Izmeni Tim</title>
+</head>
+<body>
+
+
+
+
+
+        <div class="zaglavlje">
+                
+                <nav class="zaglavlje-navigacija"  >
+                <a class="navigacija" href="pocetna.html"><b>Pocetna strana</b></a> 
+                <a class="navigacija" href="listaTimova.html"><b>Lista timova</b></a> 
+                <a class="navigacija" href="forma.html" ><b>Prijavi se</b></a>
+                <a class="navigacija" href="http://hzs.fonis.rs/" ><b>O Hakatonu</b></a>
+                </nav>
+                
+        </div>
+            
+
+
+
+
+
+
+
+
+        <div class="clanTima col-lg-4"></div>
+        <div class="container col-lg-4">
+                <form id="forma" action="#" method="post" class="form-horizontal">
+                    <h2 id="naslovIzmeni2">Izmeni informacije o timu:</h2>
+                    <div class="opsteInformacije">
+                        <div class="form-group">
+                            <label for="opisTima">Opis tima:</label>
+                            <input class="form-control" type="text" name="description" id="description"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="imeTima">Ime tima:</label>
+                            <input class="form-control" type="text" name="name" id="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="slikaTima">Link ka slici tima:</label>
+                            <input class="form-control" type="text" name="photo_url" id="photo_url" />
+                        </div>
+                    </div>
+                </form>  
+        </div> 
+        <div class="clanTima col-lg-4"></div>
+        <div class="container"><a type="button" class="btn" id="submit2" href="#">Izmeni</a></div> 
+
+</body>
+</html>

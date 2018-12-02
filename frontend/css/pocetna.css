@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/sl.png);
+    background-size: cover;
+    background-color: #1d1d1d;
+    background-repeat: no-repeat;
+}
+.btn {
+    color: rgb(56,56,56);
+}
+.btn:hover {
+    color: #33ffcc;
+}
+#btn1{
+    background:#A8A8A8;
+    margin: 55px;
+    padding: 20px;
+    width: 200px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+}
+
+#btn2{
+    float: right;
+    background:#A8A8A8;
+    margin: 55px;
+    padding: 20px;
+    width: 200px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+}
+
+#btn3{
+    left: 33%;
+    position: relative;
+    top: 50%;
+    padding: 25px;
+    background:#A8A8A8;
+    width: 33%;
+    font-family: "Century Gothic";
+    font-size: 30px;  
+}
+
+#btn1:hover{
+     transform: translate(1.5rem) scale(1.2);
+ } 
+
+#btn2:hover{
+    transform: translate(-1.5rem) scale(1.2);
+} 
+
+#btn3:hover{
+    transform: scale(1.2);
+} 
+.zaglavlje{
+    background-color: rgb(35,35,35);
+    display: inherit;
+    list-style-type: none;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding:6px 30px;
+    border-bottom: rgb(20, 20, 20);
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+}
+
+.zaglavlje-navigacija a{
+    display: inline-block;
+    color: white;
+    font-weight: 500 !important;
+    padding: 5px 10px;
+    text-decoration: none;
+    
+    
+}
+
+.zaglavlje-navigacija a:hover{
+    border:solid 2px #33ffcc;
+color:#33ffcc;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
